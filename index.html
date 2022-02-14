@@ -10,14 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
+
 </head>
 
 <body>
     <!-- Menu -->
     <header id="header">
         <div>
-            <img id="logo" src="images/logo-fitcompany.svg" alt="Logo Fit Company" />
+            <img id="logo" src="images/logo-fitcompany.svg" alt="Logo Fit Company" width="258px" height="74.09px" />
         </div>
         <nav id="nav1">
             <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
@@ -34,7 +34,24 @@
     </header>
 
     <main>
-
+        <!-- Cart -->
+        <div class="line1">
+            <h1>Linha Especial</h1>
+            <button type="button" id="btn-cart">
+                <img src="images/cart.svg" height="50" width="50" alt="Carrinho" />
+                <span class="btn-cart-badge">0</span>
+            </button>
+        </div>
+        <section>
+            <div class="cart">
+                <div class="cart-line1">
+                    <h2>Carrinho</h2>
+                    <button type="button" id="btn-close-cart"><span>X</span></button>
+                </div>
+                <img id="cart-big" src="images/cart-big.svg" alt="Carrinho Vazio" height="150" width="150" />
+                <p>Seu carrinho está vazio</p>
+            </div>
+        </section>
     </main>
 
     <footer>

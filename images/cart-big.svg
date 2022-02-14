@@ -1,0 +1,14 @@
+<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="75" cy="75" r="75" fill="#F02828" fill-opacity="0.5"/>
+<line x1="21.7835" y1="31.3345" x2="37.5163" y2="38.6711" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<line x1="37.2725" y1="38.6171" x2="56.7481" y2="94.7634" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M56.1312 94.8466L110.835 94.8466" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M110.835 93.6575L122.727 48.4672" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M53.7526 48.0887L122.727 48.0887" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M63.2664 63.927L117.97 63.927" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M65.6448 80.576H113.213" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M56 94L48.9958 112.685" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M48.9957 113.874H110.835" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<circle cx="58.5095" cy="124.577" r="8.51374" stroke="white" stroke-width="2"/>
+<circle cx="98.9428" cy="124.577" r="8.51374" stroke="white" stroke-width="2"/>
+</svg>
