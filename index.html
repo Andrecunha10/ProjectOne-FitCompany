@@ -37,16 +37,18 @@
         <!-- Cart -->
         <div class="line1">
             <h1>Linha Especial</h1>
-            <button type="button" id="btn-cart">
+            <button type="button" id="btn-cart" class="open-cart" aria-label="Carrinho" aria-haspopup="true" aria-controls="cart"
+            aria-expanded="false">
                 <img src="images/cart.svg" height="50" width="50" alt="Carrinho" />
                 <span class="btn-cart-badge">0</span>
             </button>
         </div>
-        <section>
-            <div class="cart">
+        <section id="section-cart">
+            <div id="cart-windows">
                 <div class="cart-line1">
                     <h2>Carrinho</h2>
-                    <button type="button" id="btn-close-cart"><span>X</span></button>
+                    <button type="button" id="btn-close-cart" class="open-cart" aria-label="Fechar Carrinho" aria-haspopup="true" aria-controls="cart"
+                    aria-expanded="false"><span>X</span></button>
                 </div>
                 <img id="cart-big" src="images/cart-big.svg" alt="Carrinho Vazio" height="150" width="150" />
                 <p>Seu carrinho está vazio</p>
