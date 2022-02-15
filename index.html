@@ -16,44 +16,69 @@
 <body>
     <!-- Menu -->
     <header id="header">
-        <div>
-            <img id="logo" src="images/logo-fitcompany.svg" alt="Logo Fit Company" width="258px" height="74.09px" />
+        <div class="conteiner">
+            <div>
+                <img id="logo" src="images/logo-fitcompany.svg" alt="Logo Fit Company" width="258px" height="74.09px" />
+            </div>
+            <nav id="nav1">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                    aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Carrinho</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav id="nav1">
-            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
-                aria-expanded="false">
-                <span id="hamburger"></span>
-            </button>
-            <ul id="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Carrinho</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <!-- Cart -->
-        <div class="line1">
-            <h1>Linha Especial</h1>
-            <button type="button" id="btn-cart" class="open-cart" aria-label="Carrinho" aria-haspopup="true" aria-controls="cart"
-            aria-expanded="false">
-                <img src="images/cart.svg" height="50" width="50" alt="Carrinho" />
-                <span class="btn-cart-badge">0</span>
-            </button>
-        </div>
-        <section id="section-cart">
-            <div id="cart-windows">
-                <div class="cart-line1">
-                    <h2>Carrinho</h2>
-                    <button type="button" id="btn-close-cart" class="open-cart" aria-label="Fechar Carrinho" aria-haspopup="true" aria-controls="cart"
-                    aria-expanded="false"><span>X</span></button>
+        <div class="conteiner">
+
+            <!-- Cart -->
+            <div class="cart">
+                <button type="button" id="btn-cart" class="open-cart" aria-label="Carrinho" aria-haspopup="true"
+                    aria-controls="cart" aria-expanded="false">
+                    <img src="images/cart.svg" height="50" width="50" alt="Carrinho" />
+                    <span class="btn-cart-badge">0</span>
+                </button>
+
+                <div id="cart-windows">
+                    <div class="cart-line1">
+                        <h2>Carrinho</h2>
+                        <button type="button" id="btn-close-cart" class="open-cart" aria-label="Fechar Carrinho"
+                            aria-haspopup="true" aria-controls="cart" aria-expanded="false"><span>X</span></button>
+                    </div>
+                    <img id="cart-big" src="images/cart-big.svg" alt="Carrinho Vazio" height="150" width="150" />
+                    <p>Seu carrinho está vazio</p>
                 </div>
-                <img id="cart-big" src="images/cart-big.svg" alt="Carrinho Vazio" height="150" width="150" />
-                <p>Seu carrinho está vazio</p>
             </div>
-        </section>
+
+
+            <h1>Linha Especial</h1>
+
+
+
+
+            <article class="product">
+                <img class="image-produtc" src="images/flexora.jpg" alt="Flexora" class="image-product">
+                <div>
+                    <h3 class="product-name">Flexora</h3>
+                    <button type="button">Adicionar ao carrinho</button>
+                </div>
+            </article>
+
+            <article class="product">
+                <img class="image-produtc" src="images/flexora.jpg" alt="Flexora" class="image-product">
+                <div>
+                    <h3 class="product-name">Flexora</h3>
+                    <button type="button">Adicionar ao carrinho</button>
+                </div>
+            </article>
+
     </main>
 
     <footer>
