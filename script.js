@@ -15,7 +15,7 @@ const btncart = document.getElementById('btn-cart');
 function togglecart(event) {
     if (event.type ==='touchstart') event.preventDefault();
     const cart = document.getElementById('cart-windows');
-    cart.classList.add('activecart');
+    cart.classList.toggle('activecart');
 }
 
 btncart.addEventListener('click', togglecart);
