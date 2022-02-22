@@ -2,7 +2,7 @@ const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event) {
   if (event.type === 'touchstart') event.preventDefault();
-  const nav1 = document.getElementById('nav1');
+  const nav1 = document.getElementById('nav-mobile');
   nav1.classList.toggle('activemenu');
 }
 
@@ -10,7 +10,6 @@ btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 
 const btncart = document.getElementById('btn-cart');
-
 
 function togglecart(event) {
     if (event.type ==='touchstart') event.preventDefault();
