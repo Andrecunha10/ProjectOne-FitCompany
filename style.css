@@ -418,3 +418,34 @@ body{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+#footer {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    position: relative;
+}
+
+#footer > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#footer p{
+    color: #fff;
+    font-size: 12px;
+}
+
+#footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logos{
+    display: flex;
+    gap: 10px;
+}
+
+
+
