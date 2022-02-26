@@ -22,7 +22,8 @@ body{
     background-color: #000;
     position: relative;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.21);
-}
+    margin-bottom: 20px;
+}   
 
 #header div{
     display: flex;
@@ -66,7 +67,6 @@ body{
 
 #menu-mobile li:hover{
     background-color: #222;
-    border-radius: 5px;
 }
 
 /* Button Hamburger */
@@ -136,8 +136,8 @@ body{
 }
 #menu-desktop li{
     padding: 5px;
-    border-bottom: none;
     margin: auto;
+    border: #000 solid 2px;
 }
 
 #menu-desktop a{
@@ -147,8 +147,9 @@ body{
 }
 
 #menu-desktop li:hover{
-    background-color: #222;
+    box-shadow: 0 0 10PX rgba(255, 255, 255, 1), 0 0 5PX rgba(255, 255, 255, 1) inset;
     border-radius: 5px;
+    border: #fff solid 2px;
 }
 
  /* container */
@@ -184,15 +185,16 @@ body{
     #nav-desktop{
         display: block;
     }
+    #menu-desktop li{
+        margin: 0 5px;
+    }
 }
 
 @media (min-width: 992px) {
     .container {
       width: 960px;
     }
-    #menu-desktop li{
-        margin: 0 5px;
-    }
+
 }
   @media (min-width: 1200px) {
     .container {
@@ -210,7 +212,7 @@ body{
     position: sticky;
     top: 10px;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 #btn-cart{
@@ -219,6 +221,11 @@ body{
     position: absolute;
     top: 0px;
     right: 0;
+}
+
+#btn-cart:hover img{
+    width: 53px;
+    height: 53px;
 }
 
 .btn-cart-badge{
@@ -249,11 +256,12 @@ body{
     top: 55px;
     right: 0;
     padding: 0 0 15px;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.21);
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
     transition: 0.6s;
     z-index: 999;
     visibility: hidden;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .cart-line1{
@@ -271,6 +279,10 @@ body{
     width: 25px;
     height: 25px;
     cursor:pointer;
+}
+
+.fa-solid:hover{
+    color: #555;
 }
 
 #cart-big{
@@ -321,13 +333,18 @@ body{
 
 /* Titles */
 
-.pagetitle{
+.title{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.product-title{
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .product-name{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -342,6 +359,7 @@ body{
     align-items: center;
     justify-content: space-between;
     width: 253px;
+    gap: 10px;
 }
 
 .product:hover{
@@ -349,11 +367,21 @@ body{
 }
 
 .product div{
-    margin-top: 10px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     width: 100%;
+    gap: 12px;
+    text-align: justify;
+    flex-grow: 1;
+}
+
+.product p{
+    font-size: 14px;
+}
+
+.product .btnaddcart {
+    margin-top: auto;
 }
 
 
@@ -380,15 +408,16 @@ body{
     
 }
 
-.main-conteiner{
+/* SECTION CONTAINER */
+.section-container{
     display: grid;
     gap: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     justify-items: center;
 }
 
 @media (min-width: 576px) {
-.main-conteiner{
+.section-container{
     grid-template-columns: 1fr 1fr;
     }
 
@@ -398,43 +427,52 @@ body{
 }
 
 @media (min-width: 768px) {
-    .main-conteiner{
+    .section-container{
         padding: 0 75px;
         }
+    .product-title{
+        margin-left: 75px;
+    }    
     }
 
 @media (min-width: 992px) {
-    .main-conteiner{
+    .section-container{
         grid-template-columns: 1fr 1fr 1fr;
         padding: 0;
     }
     .product{
         width: 100%;
     }
+    .product-title{
+        margin-left: 0;
+    } 
 }
 
 @media (min-width: 1200px) {
-    .main-conteiner{
+    .section-container{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+
+/* FOOTER */
 #footer {
     width: 100%;
-    height: 60px;
     background-color: #000;
-    position: relative;
+    padding: 10px;
 }
 
 #footer > div{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
     align-items: center;
     height: 100%;
+    gap: 15px;
 }
 
 #footer p{
     color: #fff;
     font-size: 10px;
+    text-align: center;
 }
 
 #footer a{
@@ -447,5 +485,28 @@ body{
     gap: 10px;
 }
 
+@media (min-width: 576px) {
+    #footer{
+        height: 60px;
+    }
+    #footer > div{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #footer p{
+        color: #fff;
+        font-size: 12px;
+        text-align: left;
+    }
+    .logos{
+        gap: 15px;
+    }
+    }
+    
+@media (min-width: 768px) {
+    .logos{
+        gap: 20px;
+    }
+    }
 
 

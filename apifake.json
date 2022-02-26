@@ -1,0 +1,112 @@
+{
+    "groups": [
+      {
+        "id": 1,
+        "name": "Linha Especial",
+        "products": [
+          {
+            "id": 2,
+            "name": "Cadeira Flexora - Extensora",
+            "image": "images/flexora.jpg"
+          },
+          {
+            "id": 3,
+            "name": "Cadeira Flexora - Extensora",
+            "image": "images/flexora.jpg"
+          },
+          {
+            "id": 4,
+            "name": "Cadeira Flexora - Extensora",
+            "image": "images/flexora.jpg"
+          },
+          {
+            "id": 5,
+            "name": "Cadeira Flexora - Extensora",
+            "image": "images/flexora.jpg"
+          },
+          {
+            "id": 6,
+            "name": "Cadeira Flexora - Extensora",
+            "image": "images/flexora.jpg"
+          },
+          {
+            "id": 7,
+            "name": "Cadeira Flexora - Extensora",
+            "image": "images/flexora.jpg"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Linha Especial",
+        "products": [
+          {
+            "id": 9,
+            "name": "Cadeira Flexora - Extensora",
+            "image": "images/flexora.jpg"
+          },
+          {
+            "id": 10,
+            "name": "Cadeira Flexora - Extensora",
+            "image": "images/flexora.jpg"
+          },
+          {
+            "id": 11,
+            "name": "Cadeira Flexora - Extensora",
+            "image": "images/flexora.jpg"
+          },
+          {
+            "id": 12,
+            "name": "Cadeira Flexora - Extensora",
+            "image": "images/flexora.jpg"
+          },
+          {
+            "id": 13,
+            "name": "Cadeira Flexora - Extensora",
+            "image": "images/flexora.jpg"
+          },
+          {
+            "id": 14,
+            "name": "Cadeira Flexora - Extensora",
+            "image": "images/flexora.jpg"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Linha Especial",
+        "products": [
+          {
+            "id": 16,
+            "name": "Cadeira Flexora - Extensora",
+            "image": "images/flexora.jpg"
+          },
+          {
+            "id": 17,
+            "name": "Cadeira Flexora - Extensora",
+            "image": "images/flexora.jpg"
+          },
+          {
+            "id": 18,
+            "name": "Cadeira Flexora - Extensora",
+            "image": "images/flexora.jpg"
+          },
+          {
+            "id": 19,
+            "name": "Cadeira Flexora - Extensora",
+            "image": "images/flexora.jpg"
+          },
+          {
+            "id": 20,
+            "name": "Cadeira Flexora - Extensora",
+            "image": "images/flexora.jpg"
+          },
+          {
+            "id": 21,
+            "name": "Cadeira Flexora - Extensora",
+            "image": "images/flexora.jpg"
+          }
+        ]
+      }
+    ]
+  }

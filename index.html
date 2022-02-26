@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fit Company</title>
+    <script src="https://kit.fontawesome.com/2b48e519be.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+    <title>Fit Company</title>
 </head>
 
 <body>
@@ -44,43 +44,38 @@
 
         </div>
     </header>
-
+    <!-- Main -->
     <main class="main">
-        <div class="container">
-
+        <div class="container" id="main-products">
             <!-- Cart -->
-            <div class="cart">
-                <button type="button" id="btn-cart" class="open-cart" aria-label="Carrinho" aria-haspopup="true"
-                    aria-controls="cart" aria-expanded="false">
-                    <img src="images/cart.svg" height="50" width="50" alt="Carrinho" />
+            <aside class="cart">
+                <button type="button" id="btn-cart">
+                    <img src="images/cart.svg" height="50px" width="50px" alt="Carrinho" />
                     <span class="btn-cart-badge">0</span>
                 </button>
 
                 <div id="cart-windows">
                     <div class="cart-line1">
                         <h2>Carrinho</h2>
-                        <button type="button" id="btn-close-cart" class="open-cart" aria-label="Fechar Carrinho"
-                            aria-haspopup="true" aria-controls="cart" aria-expanded="false"><span>X</span></button>
+                        <button type="button" id="btn-close-cart"><i class="fa-solid fa-xmark"></i></button>
                     </div>
-                    <img id="cart-big" src="images/cart-big.svg" alt="Carrinho Vazio" height="150" width="150" />
+                    <img id="cart-big" src="images/cart-big.svg" alt="Carrinho Vazio" height="150px" width="150px" />
                     <p>Seu carrinho está vazio</p>
                 </div>
-            </div>
-
-
-            <h1 class="pagetitle">Linha Especial</h1>
-
-
-            <!-- Main -->
-            <section>
-                <div class="main-conteiner">
+            </aside>
+            <h1 class="title">Produtos</h1>
+            <div id="main-groups"></div>
+            <!-- <section>
+                <h1 class="product-title">Linha Especial</h1>
+                <div class="section-container">
 
                     <article class="product">
                         <img class="image-produtc" src="images/flexora.jpg" alt="Flexora" class="image-product"
                             width="200px" height="240px">
                         <div>
-                            <h3 class="product-name">Flexora</h3>
-                            <button type="button" class="btn-santadart btnaddcart">Adicionar</button>
+                            <h3 class="product-name">Cadeira Flexora - Extensora</h3>
+                            <p>O equipamento Cadeira Extensora e Flexora é um aparelho 2x1, ou seja, em uma unica maquina o usuário poderá fazer extensão e flexão de joelhos, desenvolvendo assim músculos do quadríceps (extensão) e isquiotibiais (flexão).</p>
+                            <button type="button" class="btn-santadart btnaddcart">Adicionar ao carrinho</button>
                         </div>
                     </article>
 
@@ -88,8 +83,9 @@
                         <img class="image-produtc" src="images/flexora.jpg" alt="Flexora" class="image-product"
                             width="200px" height="240px">
                         <div>
-                            <h3 class="product-name">Flexora</h3>
-                            <button type="button" class="btn-santadart btnaddcart">Adicionar</button>
+                            <h3 class="product-name">Cadeira Flexora - Extensora</h3>
+                            <p>O equipamento Cadeira Extensora e Flexora é um aparelho 2x1, ou seja, em uma unica maquina o usuário poderá fazer extensão e flexão de joelhos.</p>
+                            <button type="button" class="btn-santadart btnaddcart">Adicionar ao carrinho</button>
                         </div>
                     </article>
                     <article class="product">
@@ -142,19 +138,171 @@
                     </article>
                 </div>
             </section>
+
+            <section>
+                <h1 class="pagetitle">Linha Especial</h1>
+                <div class="section-container">
+
+                    <article class="product">
+                        <img class="image-produtc" src="images/flexora.jpg" alt="Flexora" class="image-product"
+                            width="200px" height="240px">
+                        <div>
+                            <h3 class="product-name">Cadeira Flexora - Extensora</h3>
+                            <p>O equipamento Cadeira Extensora e Flexora é um aparelho 2x1, ou seja, em uma unica maquina o usuário poderá fazer extensão e flexão de joelhos, desenvolvendo assim músculos do quadríceps (extensão) e isquiotibiais (flexão).</p>
+                            <button type="button" class="btn-santadart btnaddcart">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product">
+                        <img class="image-produtc" src="images/flexora.jpg" alt="Flexora" class="image-product"
+                            width="200px" height="240px">
+                        <div>
+                            <h3 class="product-name">Cadeira Flexora - Extensora</h3>
+                            <p>O equipamento Cadeira Extensora e Flexora é um aparelho 2x1, ou seja, em uma unica maquina o usuário poderá fazer extensão e flexão de joelhos.</p>
+                            <button type="button" class="btn-santadart btnaddcart">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <img class="image-produtc" src="images/flexora.jpg" alt="Flexora" class="image-product"
+                            width="200px" height="240px">
+                        <div>
+                            <h3 class="product-name">Flexora</h3>
+                            <button type="button" class="btn-santadart btnaddcart">Adicionar</button>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <img class="image-produtc" src="images/flexora.jpg" alt="Flexora" class="image-product"
+                            width="200px" height="240px">
+                        <div>
+                            <h3 class="product-name">Flexora</h3>
+                            <button type="button" class="btn-santadart btnaddcart">Adicionar</button>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <img class="image-produtc" src="images/flexora.jpg" alt="Flexora" class="image-product"
+                            width="200px" height="240px">
+                        <div>
+                            <h3 class="product-name">Flexora</h3>
+                            <button type="button" class="btn-santadart btnaddcart">Adicionar</button>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <img class="image-produtc" src="images/flexora.jpg" alt="Flexora" class="image-product"
+                            width="200px" height="240px">
+                        <div>
+                            <h3 class="product-name">Flexora</h3>
+                            <button type="button" class="btn-santadart btnaddcart">Adicionar</button>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <img class="image-produtc" src="images/flexora.jpg" alt="Flexora" class="image-product"
+                            width="200px" height="240px">
+                        <div>
+                            <h3 class="product-name">Flexora</h3>
+                            <button type="button" class="btn-santadart btnaddcart">Adicionar</button>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <img class="image-produtc" src="images/flexora.jpg" alt="Flexora" class="image-product"
+                            width="200px" height="240px">
+                        <div>
+                            <h3 class="product-name">Flexora</h3>
+                            <button type="button" class="btn-santadart btnaddcart">Adicionar</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section>
+                <h1 class="pagetitle">Linha Especial</h1>
+                <div class="section-container">
+
+                    <article class="product">
+                        <img class="image-produtc" src="images/flexora.jpg" alt="Flexora" class="image-product"
+                            width="200px" height="240px">
+                        <div>
+                            <h3 class="product-name">Cadeira Flexora - Extensora</h3>
+                            <p>O equipamento Cadeira Extensora e Flexora é um aparelho 2x1, ou seja, em uma unica maquina o usuário poderá fazer extensão e flexão de joelhos, desenvolvendo assim músculos do quadríceps (extensão) e isquiotibiais (flexão).</p>
+                            <button type="button" class="btn-santadart btnaddcart">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="product">
+                        <img class="image-produtc" src="images/flexora.jpg" alt="Flexora" class="image-product"
+                            width="200px" height="240px">
+                        <div>
+                            <h3 class="product-name">Cadeira Flexora - Extensora</h3>
+                            <p>O equipamento Cadeira Extensora e Flexora é um aparelho 2x1, ou seja, em uma unica maquina o usuário poderá fazer extensão e flexão de joelhos.</p>
+                            <button type="button" class="btn-santadart btnaddcart">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <img class="image-produtc" src="images/flexora.jpg" alt="Flexora" class="image-product"
+                            width="200px" height="240px">
+                        <div>
+                            <h3 class="product-name">Flexora</h3>
+                            <button type="button" class="btn-santadart btnaddcart">Adicionar</button>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <img class="image-produtc" src="images/flexora.jpg" alt="Flexora" class="image-product"
+                            width="200px" height="240px">
+                        <div>
+                            <h3 class="product-name">Flexora</h3>
+                            <button type="button" class="btn-santadart btnaddcart">Adicionar</button>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <img class="image-produtc" src="images/flexora.jpg" alt="Flexora" class="image-product"
+                            width="200px" height="240px">
+                        <div>
+                            <h3 class="product-name">Flexora</h3>
+                            <button type="button" class="btn-santadart btnaddcart">Adicionar</button>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <img class="image-produtc" src="images/flexora.jpg" alt="Flexora" class="image-product"
+                            width="200px" height="240px">
+                        <div>
+                            <h3 class="product-name">Flexora</h3>
+                            <button type="button" class="btn-santadart btnaddcart">Adicionar</button>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <img class="image-produtc" src="images/flexora.jpg" alt="Flexora" class="image-product"
+                            width="200px" height="240px">
+                        <div>
+                            <h3 class="product-name">Flexora</h3>
+                            <button type="button" class="btn-santadart btnaddcart">Adicionar</button>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <img class="image-produtc" src="images/flexora.jpg" alt="Flexora" class="image-product"
+                            width="200px" height="240px">
+                        <div>
+                            <h3 class="product-name">Flexora</h3>
+                            <button type="button" class="btn-santadart btnaddcart">Adicionar</button>
+                        </div>
+                    </article>
+                </div>
+            </section> -->
         </div>
     </main>
 
     <footer id="footer">
         <div class="container">
-            <p>Página desenvolvida com o projeto de estudos para para saber mais, <a href="#">clique aqui</a>.</p>
+            <p>Página desenvolvida com o projeto de estudos. Para para saber mais, <a href="#">clique aqui</a>.</p>
             <div class="logos">
-                <a href="#"><img class="logosocialnetwork" src="images/logo-what.svg" alt="Logo WhatsApp" width="30px" height="30px"></a>
-                <a href="#"><img class="logosocialnetwork" src="images/logo-link.svg" alt="Logo LinkedIn" width="30px" height="30px"></a>
-                <a href="#"><img class="logosocialnetwork" src="images/logo-insta.svg" alt="Logo Instagram" width="30px" height="30px"></a>
-                <a href="#"><img class="logosocialnetwork" src="images/logo-face.svg" alt="Logo Facebook" width="30px" height="30px"></a>
+                <a href="#"><img class="logosocialnetwork" src="images/logo-what.svg" alt="Logo WhatsApp" width="30px"
+                        height="30px"></a>
+                <a href="#"><img class="logosocialnetwork" src="images/logo-link.svg" alt="Logo LinkedIn" width="30px"
+                        height="30px"></a>
+                <a href="#"><img class="logosocialnetwork" src="images/logo-insta.svg" alt="Logo Instagram" width="30px"
+                        height="30px"></a>
+                <a href="#"><img class="logosocialnetwork" src="images/logo-face.svg" alt="Logo Facebook" width="30px"
+                        height="30px"></a>
             </div>
-        </div>        
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
