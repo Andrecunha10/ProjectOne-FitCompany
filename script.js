@@ -39,7 +39,6 @@ const selectGroups = () => {
         const section = getSectionTag(group)
         mainGroups.appendChild(section)
       })
-      console.log('data', data)
     })
 
     .catch(() => {
@@ -86,31 +85,11 @@ const addToCart = newProduct => {
       ...newProduct,
       qty: 1
     })
-    const selectDivEmptyCart = document.querySelector ('.empty-cart')
-    selectDivEmptyCart.classList.add('full-cart')
-    const selectBtnRequest = document.querySelector ('.btn-request')
-    selectBtnRequest.classList.add('btn-request-on')
-    const selectAside = document.getElementById('add-products-cart')
-    const createDivProductSelect = document.createElement('div')
-    createDivProductSelect.classList.add('product-select')
-    selectAside.appendChild(createDivProductSelect)
-    addProductsCart.forEach(product => {
-    createDivProductSelect.innerHTML = `
-    <img class="image-cart" src="${product.image}" alt="${product.name}" height="47" width="40" />
-    <p>${product.name}</p>
-    `
-    const createProductsQty = document.createElement('p')
-    createProductsQty.textContent = `(${product.qty})`
-    createProductsQty.classList.add('product-qty')
-    createDivProductSelect.appendChild(createProductsQty)
-    const createBtntrash = document.createElement('button')
-    createBtntrash.innerHTML = `<img src="images/trash.svg" alt="Excluir" height="27" width="22" />`
-    createDivProductSelect.appendChild(createBtntrash)
-    })
+    getProductToCart()
   } else {
     addProductsCart[productIndex].qty++
     addProductsCart.forEach(product => {
-      const teste = document.querySelector('.product-qty')
+      const teste = document.querySelector('.productqty')
       teste.textContent = `(${product.qty})`
     })
 
@@ -131,22 +110,49 @@ const handleCartUpdate = () => {
   }
 }
 
-// const getProductToCart = () => {
-//   const selectDivEmptyCart = document.querySelector ('.empty-cart')
-//   selectDivEmptyCart.classList.add('full-cart')
-//   const selectBtnRequest = document.querySelector ('.btn-request')
-//   selectBtnRequest.classList.add('btn-request-on')
-//   const selectAside = document.getElementById('add-products-cart')
-//   const createDivProductSelect = document.createElement('div')
-//   createDivProductSelect.classList.add('product-select')
-//   selectAside.appendChild(createDivProductSelect)
-//   addProductsCart.forEach(product => {
-//   createDivProductSelect.innerHTML = `
-//     <img class="image-cart" src="${product.image}" alt="${product.name}" height="47" width="40" />
-//     <p>${product.name}</p>
-//     <p class="produtc-qty">(${parseInt(product.qty)})</p>
-//     <button><img src="images/trash.svg" alt="Excluir" height="27" width="22" /></button>
-//   `
-//   })
-// }
+const getProductToCart = () => {
+  const selectDivEmptyCart = document.querySelector ('.empty-cart')
+    selectDivEmptyCart.classList.add('full-cart')
+    const selectBtnRequest = document.querySelector ('.btn-request')
+    selectBtnRequest.classList.add('btn-request-on')
+    const selectAside = document.getElementById('add-products-cart')
+    const createDivProductSelect = document.createElement('div')
+    createDivProductSelect.classList.add('product-select')
+    selectAside.appendChild(createDivProductSelect)
+    addProductsCart.forEach(product => {
+    createDivProductSelect.innerHTML = `
+    <img class="image-cart" src="${product.image}" alt="${product.name}" height="47" width="40" />
+    <p>${product.name}</p>
+    `
+    const createProductsQty = document.createElement('p')
+    createProductsQty.textContent = `(${product.qty})`
+    createProductsQty.classList.add('productqty')
+    createDivProductSelect.appendChild(createProductsQty)
+    const createBtntrash = document.createElement('button')
+    createBtntrash.innerHTML = `<img src="images/trash.svg" alt="Excluir" height="27" width="22" />`
+    createDivProductSelect.appendChild(createBtntrash)
+    createBtntrash.addEventListener('click', deleteItens)
+    })
+  // const selectDivEmptyCart = document.querySelector ('.empty-cart')
+  // selectDivEmptyCart.classList.add('full-cart')
+  // const selectBtnRequest = document.querySelector ('.btn-request')
+  // selectBtnRequest.classList.add('btn-request-on')
+  // const selectAside = document.getElementById('add-products-cart')
+  // const createDivProductSelect = document.createElement('div')
+  // createDivProductSelect.classList.add('product-select')
+  // selectAside.appendChild(createDivProductSelect)
+  // addProductsCart.forEach(product => {
+  // createDivProductSelect.innerHTML = `
+  //   <img class="image-cart" src="${product.image}" alt="${product.name}" height="47" width="40" />
+  //   <p>${product.name}</p>
+  //   <p class="produtcqty">(${parseInt(product.qty)})</p>
+  //   <button><img src="images/trash.svg" alt="Excluir" height="27" width="22" /></button>
+  // `
+  // })
+}
+
+function deleteItens(){
+  const seletcItem = document.querySelector('.product-select')
+  seletcItem.innerHTML = ''
+}
 
