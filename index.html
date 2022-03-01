@@ -48,21 +48,44 @@
     <main class="main">
         <div class="container" id="main-products">
             <!-- Cart -->
-            <aside class="cart">
+            <div class="cart">
                 <button type="button" id="btn-cart">
                     <img src="images/cart.svg" height="50px" width="50px" alt="Carrinho" />
                     <span class="btn-cart-badge">0</span>
                 </button>
 
-                <div id="cart-windows">
+                <aside id="cart-windows">
                     <div class="cart-line1">
                         <h2>Carrinho</h2>
                         <button type="button" id="btn-close-cart"><i class="fa-solid fa-xmark"></i></button>
                     </div>
+                    <div class="empty-cart">
                     <img id="cart-big" src="images/cart-big.svg" alt="Carrinho Vazio" height="150px" width="150px" />
                     <p>Seu carrinho está vazio</p>
-                </div>
-            </aside>
+                    </div>
+                    <div id="add-products-cart"></div>
+                    <!-- <div class="product-select">
+                        <img class="image-cart" src="images/flexora.jpg" alt="Flexora" height="47" width="40" />
+                        <p>Flexora</p>
+                        <p>(1)</p>
+                        <button><img src="images/trash.svg" alt="Excluir" height="27" width="22" /></button>
+                    </div>
+                    <div class="product-select">
+                        <img class="image-cart" src="images/flexora.jpg" alt="Flexora" height="47" width="40" />
+                        <p>Flexora</p>
+                        <p>(1)</p>
+                        <button><img src="images/trash.svg" alt="Excluir" height="27" width="22" /></button>
+                    </div>
+                    <div class="product-select">
+                        <img class="image-cart" src="images/flexora.jpg" alt="Flexora" height="47" width="40" />
+                        <p>Flexora</p>
+                        <p>(1)</p>
+                        <button><img src="images/trash.svg" alt="Excluir" height="27" width="22" /></button>
+                    </div> -->
+                    <button class="btn-santadart btn-request">Solicitar Orçamento</button>
+                </aside>
+
+            </div>
             <h1 class="title">Produtos</h1>
             <div id="main-groups"></div>
             <!-- <section>
