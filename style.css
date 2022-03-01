@@ -347,6 +347,39 @@ body{
     display: block;
 }
 
+/* LOADING */
+
+.loader{
+    animation: is-rotating 1s infinite;
+    border: 6px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: var(--main-color);
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* Error Alert */
+
+.alert-error{
+    border: var(--main-color) 2px solid;
+    border-radius: 10px;
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px 10px;
+    font-size: 16px;
+    color: var(--main-color);
+    text-align: center;
+}
+
 /*Open Cart "Pop-up"*/
 #cart-windows.activecart{
     visibility: visible;
@@ -434,7 +467,6 @@ body{
     margin-top: auto;
 }
 
-
 /* button */
 
 .btn-santadart {
@@ -521,7 +553,7 @@ body{
 
 #footer p{
     color: #fff;
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
 }
 
@@ -544,19 +576,17 @@ body{
         justify-content: space-between;
     }
     #footer p{
-        color: #fff;
-        font-size: 12px;
         text-align: left;
     }
     .logos{
         gap: 15px;
     }
-    }
+}
     
 @media (min-width: 768px) {
     .logos{
         gap: 20px;
     }
-    }
+}
 
 

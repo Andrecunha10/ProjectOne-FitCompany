@@ -34,7 +34,7 @@ const selectGroups = () => {
   fetch('/apifake.json')
     .then(response => response.json())
     .then(data => {
-      // mainGroups.innerHTML = ''
+      mainGroups.innerHTML = ''
       data.groups.forEach((group) => {
         const section = getSectionTag(group)
         mainGroups.appendChild(section)
@@ -42,7 +42,7 @@ const selectGroups = () => {
     })
 
     .catch(() => {
-      mainGroups.innerHTML = '<p class="error">Falha ao carregar a página. Por favor, tente novamente.</p>'
+      mainGroups.innerHTML = '<p class="alert-error">Falha ao carregar a página. Por favor, tente novamente.</p>'
     })
 }
 //ADD HTML FROM API
@@ -88,9 +88,9 @@ const addToCart = newProduct => {
     getProductToCart()
   } else {
     addProductsCart[productIndex].qty++
-    addProductsCart.forEach(product => {
+    addProductsCart.forEach(newProduct => {
       const teste = document.querySelector('.productqty')
-      teste.textContent = `(${product.qty})`
+      teste.textContent = `(${newProduct.qty})`
     })
 
   }
@@ -124,7 +124,7 @@ const getProductToCart = () => {
     <img class="image-cart" src="${product.image}" alt="${product.name}" height="47" width="40" />
     <p>${product.name}</p>
     `
-    const createProductsQty = document.createElement('p')
+    let createProductsQty = document.createElement('p')
     createProductsQty.textContent = `(${product.qty})`
     createProductsQty.classList.add('productqty')
     createDivProductSelect.appendChild(createProductsQty)
