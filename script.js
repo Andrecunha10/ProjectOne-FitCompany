@@ -40,12 +40,12 @@ const selectGroups = () => {
         mainGroups.appendChild(section)
       })
     })
-
     .catch(() => {
       mainGroups.innerHTML = '<p class="alert-error">Falha ao carregar a página. Por favor, tente novamente.</p>'
     })
 }
-//ADD HTML FROM API
+selectGroups()
+//ADD HTML ON MAIN FROM API
 const getSectionTag = (group) => {
   const createSection = document.createElement('section')
   const createTitle = document.createElement('h2')
@@ -73,9 +73,10 @@ const getSectionTag = (group) => {
 })
   return createSection
 }
-selectGroups()
 
-const addProductsCart = []
+// ADD PRODUCTS TO CART
+
+let addProductsCart = []
 const addToCart = newProduct => {
   const productIndex = addProductsCart.findIndex(
     item => item.id === newProduct.id
@@ -85,20 +86,13 @@ const addToCart = newProduct => {
       ...newProduct,
       qty: 1
     })
-    getProductToCart()
   } else {
     addProductsCart[productIndex].qty++
-    addProductsCart.forEach(newProduct => {
-      const teste = document.querySelector('.productqty')
-      teste.textContent = `(${newProduct.qty})`
-    })
-
   }
-  // getProductToCart()
-  handleCartUpdate()
-
+  CartUpdate()
 }
-const handleCartUpdate = () => {
+
+const CartUpdate = () => {
   if (addProductsCart.length > 0) {
     const cartBadge = document.querySelector('.btn-cart-badge')
     cartBadge.classList.add('btn-cart-badge-show')
@@ -116,43 +110,16 @@ const getProductToCart = () => {
     const selectBtnRequest = document.querySelector ('.btn-request')
     selectBtnRequest.classList.add('btn-request-on')
     const selectAside = document.getElementById('add-products-cart')
-    const createDivProductSelect = document.createElement('div')
-    createDivProductSelect.classList.add('product-select')
-    selectAside.appendChild(createDivProductSelect)
+    const selectAsideUl= selectAside.querySelector('ul')
+    const createLi = document.createElement('li')
+    createLi.classList.add('product-select')
     addProductsCart.forEach(product => {
-    createDivProductSelect.innerHTML = `
-    <img class="image-cart" src="${product.image}" alt="${product.name}" height="47" width="40" />
-    <p>${product.name}</p>
+      createLi.innerHTML = `
+      <img class="image-cart" src="${product.image}" alt="${product.name}" height="45" width="45" />
+      <p>${product.name}</p>
+      <input class="inputs" type="number" value="${product.qty}"/>
+      <button><img src="images/trash.svg" alt="Excluir" height="27" width="22" /></button>
     `
-    let createProductsQty = document.createElement('p')
-    createProductsQty.textContent = `(${product.qty})`
-    createProductsQty.classList.add('productqty')
-    createDivProductSelect.appendChild(createProductsQty)
-    const createBtntrash = document.createElement('button')
-    createBtntrash.innerHTML = `<img src="images/trash.svg" alt="Excluir" height="27" width="22" />`
-    createDivProductSelect.appendChild(createBtntrash)
-    createBtntrash.addEventListener('click', deleteItens)
-    })
-  // const selectDivEmptyCart = document.querySelector ('.empty-cart')
-  // selectDivEmptyCart.classList.add('full-cart')
-  // const selectBtnRequest = document.querySelector ('.btn-request')
-  // selectBtnRequest.classList.add('btn-request-on')
-  // const selectAside = document.getElementById('add-products-cart')
-  // const createDivProductSelect = document.createElement('div')
-  // createDivProductSelect.classList.add('product-select')
-  // selectAside.appendChild(createDivProductSelect)
-  // addProductsCart.forEach(product => {
-  // createDivProductSelect.innerHTML = `
-  //   <img class="image-cart" src="${product.image}" alt="${product.name}" height="47" width="40" />
-  //   <p>${product.name}</p>
-  //   <p class="produtcqty">(${parseInt(product.qty)})</p>
-  //   <button><img src="images/trash.svg" alt="Excluir" height="27" width="22" /></button>
-  // `
-  // })
+    selectAsideUl.appendChild(createLi)
+  })
 }
-
-function deleteItens(){
-  const seletcItem = document.querySelector('.product-select')
-  seletcItem.innerHTML = ''
-}
-
