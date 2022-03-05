@@ -315,7 +315,7 @@ body{
 .product-select{
     display: flex;
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: center;
     margin: 0 0 10px;
     padding: 0 5px 5px;
     border-bottom: #000 2px solid;
@@ -341,7 +341,7 @@ body{
 .product-select p{
     color: #000;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     flex-grow: 1;
 }
 
@@ -356,7 +356,6 @@ body{
 .product-select input{
     width: 60px;
     text-align: center;
-    align-self: center;
 }
 
 .btn-request{
@@ -365,6 +364,7 @@ body{
     padding: 8px 20px;
     width: auto;
     display: none;
+    margin-top: 15px;
 }
 
 .btn-request-on{
@@ -378,17 +378,19 @@ body{
 
 /* crollbar */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 8px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
     background: #f1f1f1; 
+    border-radius: 5px;
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #888; 
+    border-radius: 5px;
   }
   
   /* Handle on hover */

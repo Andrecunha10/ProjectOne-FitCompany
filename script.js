@@ -102,6 +102,7 @@ const CartUpdate = () => {
     })
     cartBadge.textContent = total
   }
+  getProductToCart()
 }
 
 const getProductToCart = () => {
@@ -115,7 +116,7 @@ const getProductToCart = () => {
     createLi.classList.add('product-select')
     addProductsCart.forEach(product => {
       createLi.innerHTML = `
-      <img class="image-cart" src="${product.image}" alt="${product.name}" height="45" width="45" />
+      <img class="image-cart" src="${product.image}" alt="${product.name}" height="40" width="40" />
       <p>${product.name}</p>
       <input class="inputs" type="number" value="${product.qty}"/>
       <button><img src="images/trash.svg" alt="Excluir" height="27" width="22" /></button>
