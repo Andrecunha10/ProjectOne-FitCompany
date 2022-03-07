@@ -244,7 +244,7 @@ body{
     border-radius: 100%;
 }
 
-.btn-cart-badge-show{
+.btn-cart-badge-on{
     display: flex;
 }
 
@@ -290,13 +290,13 @@ body{
 }
 
 .empty-cart{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     padding: 25px 50px;
 }
-.full-cart{
-    display: none;
+.empty-cart-on{
+    display: flex;
 }
 
 #cart-big{
@@ -374,8 +374,12 @@ body{
 #add-products-cart{
     overflow: auto;
     max-height: 60vh;
+    display: none;
 }
 
+#add-products-cart.add-products-cart-on{
+    display: block;
+}
 /* crollbar */
 ::-webkit-scrollbar {
     width: 8px;

@@ -1,32 +1,26 @@
 //Open Menu Mobile
 const btnMobile = document.getElementById('btn-mobile');
-function toggleMenu(event) {
-  if (event.type === 'touchstart') event.preventDefault();
+function toggleMenu() {
   const nav1 = document.getElementById('nav-mobile');
   nav1.classList.toggle('activemenu');
 }
 btnMobile.addEventListener('click', toggleMenu);
-btnMobile.addEventListener('touchstart', toggleMenu);
 
 //Open/Close Cart - With Cart Button
 const btncart = document.getElementById('btn-cart');
-function togglecart(event) {
-  if (event.type === 'touchstart') event.preventDefault();
-  const cart = document.getElementById('cart-windows');
+const cart = document.getElementById('cart-windows')
+function togglecart () {
   cart.classList.toggle('activecart');
 }
 btncart.addEventListener('click', togglecart);
-btncart.addEventListener('touchstart', togglecart);
 
 //Close Cart - With Button in Cart Windows
 const btncartclose = document.getElementById('btn-close-cart');
-function togglecartclose(event) {
-  if (event.type === 'touchstart') event.preventDefault();
-  const cartclose = document.getElementById('cart-windows');
-  cartclose.classList.remove('activecart');
+function closeCart () {
+  cart.classList.remove('activecart');
 }
-btncartclose.addEventListener('click', togglecartclose);
-btncartclose.addEventListener('touchstart', togglecartclose);
+btncartclose.addEventListener('click', closeCart);
+
 
 //Validation API
 const selectGroups = () => {
@@ -92,35 +86,93 @@ const addToCart = newProduct => {
   CartUpdate()
 }
 
+const inputQtyUpdate = (id, newQty) => {
+  const findIndex = addProductsCart.findIndex((product) => {
+    if (product.id === id){
+      return true
+    }
+      return false
+    
+    })
+  addProductsCart[findIndex].qty = parseInt(newQty)
+  CartUpdate()
+}
+
+const deleteToCart = (id) => {
+  // addProductsCart = addProductsCart.filter((product) =>{
+  //   if (product.id === id){
+  //     return false
+  //   }
+  //   return true
+  // })
+  addProductsCart = addProductsCart.filter(    
+    product => product.id != id
+    )
+  CartUpdate()
+  if(addProductsCart.length === 0){
+    closeCart()
+  }
+  }
+
 const CartUpdate = () => {
+  const selectDivEmptyCart = document.querySelector ('.empty-cart')
+  const cartBadge = document.querySelector('.btn-cart-badge')
+  const selectBtnRequest = document.querySelector ('.btn-request')
+  const selectAside = document.getElementById('add-products-cart')
+  const selectAsideUl= selectAside.querySelector('ul')
   if (addProductsCart.length > 0) {
-    const cartBadge = document.querySelector('.btn-cart-badge')
-    cartBadge.classList.add('btn-cart-badge-show')
+    // UPDATE BADGE
+    cartBadge.classList.add('btn-cart-badge-on')
     let total = 0
     addProductsCart.forEach(product => {
       total = total + product.qty
     })
     cartBadge.textContent = total
+    //UPDATE CART
+    selectAside.classList.add('add-products-cart-on')
+    selectBtnRequest.classList.add('btn-request-on')
+    selectAsideUl.innerHTML=''
+    addProductsCart.forEach(product => {
+      const createLi = document.createElement('li')
+        createLi.classList.add('product-select')
+        createLi.innerHTML = `
+        <img class="image-cart" src="${product.image}" alt="${product.name}" height="40" width="40" />
+        <p>${product.name}</p>
+        <input class="inputs" type="number" value="${product.qty}"/>
+        <button><img src="images/trash.svg" alt="Excluir" height="27" width="22" /></button>
+      `
+      const selectInput = createLi.querySelector('input')
+      selectInput.addEventListener('keyup', (event) => {
+        inputQtyUpdate(product.id, event.target.value)
+      })
+      selectInput.addEventListener('change', (event) => {
+        inputQtyUpdate(product.id, event.target.value)
+      })
+      selectInput.addEventListener('keydown', (event) => {
+        if (event.key === '.' || event.key === ',' || event.key === '-'){
+          event.preventDefault()
+        }
+      })
+
+      const selectBtnDelete = createLi.querySelector('button')
+      selectBtnDelete.addEventListener('click', () => {
+        deleteToCart(product.id)
+      })
+      selectAsideUl.appendChild(createLi)
+  })
+    //TURN-OFF EMPTY CART
+    selectDivEmptyCart.classList.remove('empty-cart-on')
+  } else {
+    //TURN-ON EMPTY CART
+    selectDivEmptyCart.classList.add('empty-cart-on')
+
+    //TURN-OFF BADGE AND CART WITH PRODUCTS
+    cartBadge.classList.remove('btn-cart-badge-on')
+    selectBtnRequest.classList.remove('btn-request-on')
+    selectAside.classList.remove('add-products-cart-on')
+
   }
-  getProductToCart()
 }
 
-const getProductToCart = () => {
-  const selectDivEmptyCart = document.querySelector ('.empty-cart')
-    selectDivEmptyCart.classList.add('full-cart')
-    const selectBtnRequest = document.querySelector ('.btn-request')
-    selectBtnRequest.classList.add('btn-request-on')
-    const selectAside = document.getElementById('add-products-cart')
-    const selectAsideUl= selectAside.querySelector('ul')
-    const createLi = document.createElement('li')
-    createLi.classList.add('product-select')
-    addProductsCart.forEach(product => {
-      createLi.innerHTML = `
-      <img class="image-cart" src="${product.image}" alt="${product.name}" height="40" width="40" />
-      <p>${product.name}</p>
-      <input class="inputs" type="number" value="${product.qty}"/>
-      <button><img src="images/trash.svg" alt="Excluir" height="27" width="22" /></button>
-    `
-    selectAsideUl.appendChild(createLi)
-  })
-}
+CartUpdate()
+
