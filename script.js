@@ -9,18 +9,22 @@ btnMobile.addEventListener('click', toggleMenu);
 //Open/Close Cart - With Cart Button
 const btncart = document.getElementById('btn-cart');
 const cart = document.getElementById('cart-windows')
-function togglecart () {
+function togglecart() {
   cart.classList.toggle('activecart');
 }
 btncart.addEventListener('click', togglecart);
 
 //Close Cart - With Button in Cart Windows
 const btncartclose = document.getElementById('btn-close-cart');
-function closeCart () {
+function closeCart() {
   cart.classList.remove('activecart');
 }
 btncartclose.addEventListener('click', closeCart);
 
+//CLOSE CART WINDOWS
+document.addEventListener('click', closeCart)
+btncart.addEventListener('click', event => { event.stopPropagation() })
+cart.addEventListener('click', event => { event.stopPropagation() })
 
 //Validation API
 const selectGroups = () => {
@@ -60,11 +64,11 @@ const getSectionTag = (group) => {
             <button type="button" class="btn-santadart btnaddcart">Adicionar ao carrinho</button>
        </div>
   `
-  const btnAddCart = createArticle.querySelector('.btnaddcart')
-  btnAddCart.addEventListener('click', () => {
-    addToCart(product)
+    const btnAddCart = createArticle.querySelector('.btnaddcart')
+    btnAddCart.addEventListener('click', () => {
+      addToCart(product)
+    })
   })
-})
   return createSection
 }
 
@@ -91,26 +95,26 @@ const addToCart = newProduct => {
 
 const inputQtyUpdate = (id, newQty) => {
   const newQtyInt = parseInt(newQty)
-  if (isNaN(newQtyInt)){
+  if (isNaN(newQtyInt)) {
     return
   }
   // if (newQtyInt > 10){
   //   alert('Não é permitido iserir um número maior que 10')
   //   return
   // }
-  if (newQtyInt > 0){
-  const findIndex = addProductsCart.findIndex((product) => {
-    if (product.id === id){
-      return true
-    }
+  if (newQtyInt > 0) {
+    const findIndex = addProductsCart.findIndex((product) => {
+      if (product.id === id) {
+        return true
+      }
       return false
-      
+
     })
     addProductsCart[findIndex].qty = parseInt(newQty)
     CartUpdate(false)
-}else{
-  deleteToCart(id)
-} 
+  } else {
+    deleteToCart(id)
+  }
 }
 
 const deleteToCart = (id) => {
@@ -120,25 +124,25 @@ const deleteToCart = (id) => {
   //   }
   //   return true
   // })
-  addProductsCart = addProductsCart.filter(    
+  addProductsCart = addProductsCart.filter(
     product => product.id != id
-    )
+  )
   CartUpdate(true)
-  if(addProductsCart.length === 0){
+  if (addProductsCart.length === 0) {
     closeCart()
   }
-  }
+}
 
 const CartUpdate = (printProducts) => {
   //SAVE CART IN A LOCALSTORAGE
   const productsCartSotorege = JSON.stringify(addProductsCart)
   localStorage.setItem('productsinCart', productsCartSotorege)
   //VARIABLES
-  const selectDivEmptyCart = document.querySelector ('.empty-cart')
+  const selectDivEmptyCart = document.querySelector('.empty-cart')
   const cartBadge = document.querySelector('.btn-cart-badge')
-  const selectBtnRequest = document.querySelector ('.btn-request')
+  const selectBtnRequest = document.querySelector('.btn-request')
   const selectAside = document.getElementById('add-products-cart')
-  const selectAsideUl= selectAside.querySelector('ul')
+  const selectAsideUl = selectAside.querySelector('ul')
   if (addProductsCart.length > 0) {
     // UPDATE BADGE
     cartBadge.classList.add('btn-cart-badge-on')
@@ -148,14 +152,14 @@ const CartUpdate = (printProducts) => {
     })
     cartBadge.textContent = total
     //UPDATE CART
-    if (printProducts){
+    if (printProducts) {
       selectAside.classList.add('add-products-cart-on')
       selectBtnRequest.classList.add('btn-request-on')
-      selectAsideUl.innerHTML=''
+      selectAsideUl.innerHTML = ''
       addProductsCart.forEach(product => {
         const createLi = document.createElement('li')
-          createLi.classList.add('product-select')
-          createLi.innerHTML = `
+        createLi.classList.add('product-select')
+        createLi.innerHTML = `
           <img class="image-cart" src="${product.image}" alt="${product.name}" height="40" width="40" />
           <p>${product.name}</p>
           <input class="inputs" type="number" value="${product.qty}"/>
@@ -169,18 +173,18 @@ const CartUpdate = (printProducts) => {
           inputQtyUpdate(product.id, event.target.value)
         })
         selectInput.addEventListener('keydown', (event) => {
-          if (event.key === '.' || event.key === ',' || event.key === '-'){
+          if (event.key === '.' || event.key === ',' || event.key === '-') {
             event.preventDefault()
           }
-        }) 
+        })
         const selectBtnDelete = createLi.querySelector('button')
         selectBtnDelete.addEventListener('click', () => {
           deleteToCart(product.id)
         })
         selectAsideUl.appendChild(createLi)
-        })
-        //TURN-OFF EMPTY CART
-        selectDivEmptyCart.classList.remove('empty-cart-on')
+      })
+      //TURN-OFF EMPTY CART
+      selectDivEmptyCart.classList.remove('empty-cart-on')
     }
   } else {
     //TURN-ON EMPTY CART
@@ -195,8 +199,8 @@ const CartUpdate = (printProducts) => {
 }
 CartUpdate(true)
 
-window.addEventListener('storage', (e)=> {
-  if (e.key === 'productsinCart'){
+window.addEventListener('storage', (e) => {
+  if (e.key === 'productsinCart') {
     addProductsCart = JSON.parse(e.newValue)
     CartUpdate(true)
   }

@@ -1,96 +1,96 @@
 {
-    "groups": [
-      {
-        "id": 1,
-        "name": "Linha Especial",
-        "products": [
-          {
-            "id": 2,
-            "name": "Cadeira Flexora - Extensora",
-            "image": "images/flexora-extensora.jpg"
-          },
-          {
-            "id": 3,
-            "name": "Remada Articulada",
-            "image": "images/remada-articulada.jpg"
-          },
-          {
-            "id": 4,
-            "name": "Scott Máquina",
-            "image": "images/scott-maquina.jpg"
-          },
-          {
-            "id": 5,
-            "name": "Flexora Vertical",
-            "image": "images/flexora-vertical.jpg"
-          },
-          {
-            "id": 6,
-            "name": "Elevação Pélvica",
-            "image": "images/elevacao-pelvica.jpg"
-          },
-          {
-            "id": 7,
-            "name": "Glúteo 4 Apoios - Máquina",
-            "image": "images/gluteo-4-apoios.jpg"
-          },
-          {
-            "id": 8,
-            "name": "Remada Cavalinho",
-            "image": "images/remada-cavalinho.jpg"
-          },
-          {
-            "id": 18,
-            "name": "Agachamento Sissy",
-            "image": "images/agachamento-sissy.jpg"
-          }
-        ]
-      },
-      {
-        "id": 9,
-        "name": "Linha Quadrada",
-        "products": [
-          {
-            "id": 10,
-            "name": "Peck Deck",
-            "image": "images/peck-deck.jpg"
-          },
-          {
-            "id": 11,
-            "name": "Scott Maquina",
-            "image": "images/scott-maquina-qd.jpg"
-          },
-          {
-            "id": 12,
-            "name": "Banco Reto - Inclinado",
-            "image": "images/banco-inclinado.jpg"
-          },
-          {
-            "id": 13,
-            "name": "Glúteo 4 Apoios",
-            "image": "images/gluteo-4-apoios-qd.jpg"
-          },
-          {
-            "id": 14,
-            "name": "Leg Press 45º",
-            "image": "images/leg-press-45.jpg"
-          },
-          {
-            "id": 15,
-            "name": "Hack",
-            "image": "images/hack.jpg"
-          },
-          {
-            "id": 16,
-            "name": "Panturrilha Sentada",
-            "image": "images/panturrilha-sentada.jpg"
-          },
-          {
-            "id": 17,
-            "name": "Multifuncional",
-            "image": "images/multifuncional.jpg"
-          }
-        ]
-      }
-    ]
-  }
+  "groups": [
+    {
+      "id": 1,
+      "name": "Linha Especial",
+      "products": [
+        {
+          "id": 2,
+          "name": "Cadeira Flexora - Extensora",
+          "image": "images/flexora-extensora.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Remada Articulada",
+          "image": "images/remada-articulada.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Scott Máquina",
+          "image": "images/scott-maquina.jpg"
+        },
+        {
+          "id": 5,
+          "name": "Flexora Vertical",
+          "image": "images/flexora-vertical.jpg"
+        },
+        {
+          "id": 6,
+          "name": "Elevação Pélvica",
+          "image": "images/elevacao-pelvica.jpg"
+        },
+        {
+          "id": 7,
+          "name": "Glúteo 4 Apoios - Máquina",
+          "image": "images/gluteo-4-apoios.jpg"
+        },
+        {
+          "id": 8,
+          "name": "Remada Cavalinho",
+          "image": "images/remada-cavalinho.jpg"
+        },
+        {
+          "id": 18,
+          "name": "Agachamento Sissy",
+          "image": "images/agachamento-sissy.jpg"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Linha Quadrada",
+      "products": [
+        {
+          "id": 10,
+          "name": "Peck Deck",
+          "image": "images/peck-deck.jpg"
+        },
+        {
+          "id": 11,
+          "name": "Scott Maquina",
+          "image": "images/scott-maquina-qd.jpg"
+        },
+        {
+          "id": 12,
+          "name": "Banco Reto - Inclinado",
+          "image": "images/banco-inclinado.jpg"
+        },
+        {
+          "id": 13,
+          "name": "Glúteo 4 Apoios",
+          "image": "images/gluteo-4-apoios-qd.jpg"
+        },
+        {
+          "id": 14,
+          "name": "Leg Press 45º",
+          "image": "images/leg-press-45.jpg"
+        },
+        {
+          "id": 15,
+          "name": "Hack",
+          "image": "images/hack.jpg"
+        },
+        {
+          "id": 16,
+          "name": "Panturrilha Sentada",
+          "image": "images/panturrilha-sentada.jpg"
+        },
+        {
+          "id": 17,
+          "name": "Multifuncional",
+          "image": "images/multifuncional.jpg"
+        }
+      ]
+    }
+  ]
+}
