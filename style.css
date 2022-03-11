@@ -269,7 +269,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 0 15px;
+  margin: 0;
   padding: 0 0 10px;
   border-bottom: #000 2px solid;
 }
@@ -360,7 +360,7 @@ body {
   padding: 8px 20px;
   width: auto;
   display: none;
-  margin-top: 15px;
+  text-decoration: none;
 }
 
 .btn-request-on {
@@ -371,6 +371,7 @@ body {
   overflow: auto;
   max-height: 60vh;
   display: none;
+  padding: 15px 0;
 }
 
 #add-products-cart.add-products-cart-on {
@@ -635,5 +636,50 @@ body {
 @media (min-width: 768px) {
   .logos {
     gap: 20px;
+  }
+}
+
+/* PAGE SENDBUDET */
+#sent-budget {
+  padding: 0 25px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.btn-send {
+  font-size: 12px;
+  text-align: center;
+  padding: 8px 20px;
+  align-self: center;
+  text-decoration: none;
+  width: 170px;
+}
+
+.btn-add-more{
+  background-color: #fff;
+  border: var(--main-color) 1px solid;
+  color: var(--main-color);  
+}
+
+.btn-add-more:hover{
+  background-color: var(--main-color);
+  border: #fff 1px solid;
+  color: #fff;  
+}
+
+.btn-container{
+  display: grid;
+  padding: 0 15px;
+  gap: 15px;
+}
+
+@media (min-width: 576px) {
+  #sent-budget{
+    width: 550px;
+  }
+  .btn-container{
+    grid-template-columns: 1fr 1fr;
   }
 }

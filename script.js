@@ -12,19 +12,19 @@ const cart = document.getElementById('cart-windows')
 function togglecart() {
   cart.classList.toggle('activecart');
 }
-btncart.addEventListener('click', togglecart);
+btncart?.addEventListener('click', togglecart);
 
 //Close Cart - With Button in Cart Windows
 const btncartclose = document.getElementById('btn-close-cart');
 function closeCart() {
-  cart.classList.remove('activecart');
+  cart?.classList.remove('activecart');
 }
-btncartclose.addEventListener('click', closeCart);
+btncartclose?.addEventListener('click', closeCart);
 
 //CLOSE CART WINDOWS
 document.addEventListener('click', closeCart)
-btncart.addEventListener('click', event => { event.stopPropagation() })
-cart.addEventListener('click', event => { event.stopPropagation() })
+btncart?.addEventListener('click', event => { event.stopPropagation() })
+cart?.addEventListener('click', event => { event.stopPropagation() })
 
 //Validation API
 const selectGroups = () => {
@@ -39,7 +39,9 @@ const selectGroups = () => {
       })
     })
     .catch(() => {
+      if(mainGroups) {
       mainGroups.innerHTML = '<p class="alert-error">Falha ao carregar a página. Por favor, tente novamente.</p>'
+      }
     })
 }
 selectGroups()
@@ -145,16 +147,18 @@ const CartUpdate = (printProducts) => {
   const selectAsideUl = selectAside.querySelector('ul')
   if (addProductsCart.length > 0) {
     // UPDATE BADGE
-    cartBadge.classList.add('btn-cart-badge-on')
+    cartBadge?.classList.add('btn-cart-badge-on')
     let total = 0
     addProductsCart.forEach(product => {
       total = total + product.qty
     })
+    if (cartBadge){
     cartBadge.textContent = total
+    }
     //UPDATE CART
     if (printProducts) {
       selectAside.classList.add('add-products-cart-on')
-      selectBtnRequest.classList.add('btn-request-on')
+      selectBtnRequest?.classList.add('btn-request-on')
       selectAsideUl.innerHTML = ''
       addProductsCart.forEach(product => {
         const createLi = document.createElement('li')
@@ -191,14 +195,15 @@ const CartUpdate = (printProducts) => {
     selectDivEmptyCart.classList.add('empty-cart-on')
 
     //TURN-OFF BADGE AND CART WITH PRODUCTS
-    cartBadge.classList.remove('btn-cart-badge-on')
-    selectBtnRequest.classList.remove('btn-request-on')
+    cartBadge?.classList.remove('btn-cart-badge-on')
+    selectBtnRequest?.classList.remove('btn-request-on')
     selectAside.classList.remove('add-products-cart-on')
 
   }
 }
 CartUpdate(true)
 
+//CLOSE CART WITH WINDOW
 window.addEventListener('storage', (e) => {
   if (e.key === 'productsinCart') {
     addProductsCart = JSON.parse(e.newValue)
