@@ -62,7 +62,7 @@ const getSectionTag = (group) => {
     createArticle.innerHTML = `
         <img class="image-produtc" src="${product.image}" alt="${product.name}" width="200" height="240">
         <div>
-            <h3 class="product-name">${product.name}</h3>
+            <a href="product.html" class="product-name">${product.name}</a>
             <button type="button" class="btn-santadart btnaddcart">Adicionar ao carrinho</button>
        </div>
   `
@@ -209,5 +209,19 @@ window.addEventListener('storage', (e) => {
     addProductsCart = JSON.parse(e.newValue)
     CartUpdate(true)
   }
+})
+
+const selectForm = document.querySelector('.form-send')
+selectForm?.addEventListener('submit', (event) => {
+  event.preventDefault()
+  let budget = 'Por gentileza, me enviar o seguinte orçamento:\n'
+  addProductsCart.forEach(product => {
+    budget += `\n*${product.qty}x ${product.name}*\n`
+  })
+  budget += `\n*Nome do cliente*\n
+  Email\n
+  Telefone\n
+  Mensagem`
+  window.open(`https://api.whatsapp.com/send?phone=5511998218975&text=${encodeURI(budget)}`, '_blank')
 })
 
