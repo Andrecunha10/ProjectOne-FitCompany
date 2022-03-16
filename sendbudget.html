@@ -57,10 +57,10 @@
       <div class="form-container">
         <h3>Solicite seu orçamento</h3>
         <form class="form-send" action="">
-          <input type="text" class="inputs" placeholder="Seu Nome:*" />
-          <input type="email" class="inputs" placeholder="E-mail:*" />
-          <input type="text" class="inputs" placeholder="Telefone:* (99)99999-9999" />
-          <textarea class="send-message" name="message" placeholder="Mensagem:*" maxlength="225"></textarea>
+          <input id="form-name" type="text" class="inputs" placeholder="Seu Nome:*" required />
+          <input id="form-email" type="email" class="inputs" placeholder="E-mail:*" required />
+          <input id="form-phone" type="text" class="inputs" placeholder="Telefone:* (99)99999-9999" required />
+          <textarea id="form-message" class="send-message" name="message" placeholder="Mensagem:*" maxlength="225" required></textarea>
           <input class="btn-santadart btn-send" type="submit" value="Solicitar Orçamento" />
         </form>
         <a href="index.html" class="btn-santadart btn-send btn-add-more">Adicionar Mais Itens</a>
@@ -89,6 +89,7 @@
       </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/imask"></script>
   <script src="script.js"></script>
 </body>
 </html>

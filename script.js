@@ -137,8 +137,8 @@ const deleteToCart = (id) => {
 
 const CartUpdate = (printProducts) => {
   //SAVE CART IN A LOCALSTORAGE
-  const productsCartSotorege = JSON.stringify(addProductsCart)
-  localStorage.setItem('productsinCart', productsCartSotorege)
+  const productsCartStorege = JSON.stringify(addProductsCart)
+  localStorage.setItem('productsinCart', productsCartStorege)
   //VARIABLES
   const selectDivEmptyCart = document.querySelector('.empty-cart')
   const cartBadge = document.querySelector('.btn-cart-badge')
@@ -214,14 +214,34 @@ window.addEventListener('storage', (e) => {
 const selectForm = document.querySelector('.form-send')
 selectForm?.addEventListener('submit', (event) => {
   event.preventDefault()
+  if (addProductsCart.length == 0) {
+    let budget = `Por gentileza, retorne meu contato.\n
+*Nome* ${selectForm.elements['form-name'].value}\n
+*Email* ${selectForm.elements['form-email'].value}\n
+*Telefone* ${selectForm.elements['form-phone'].value}\n
+*Mensagem* ${selectForm.elements['form-message'].value}`
+const whats = window.innerWidth > 768 ? 'web' : 'api'
+  window.open(`https://${whats}.whatsapp.com/send?phone=5511998218975&text=${encodeURI(budget)}`, '_blank')
+  } else{
   let budget = 'Por gentileza, me enviar o seguinte orçamento:\n'
   addProductsCart.forEach(product => {
-    budget += `\n*${product.qty}x ${product.name}*\n`
+    budget += `\n*${product.qty}x ${product.name}* - cód. ${product.id}\n`
   })
-  budget += `\n*Nome do cliente*\n
-  Email\n
-  Telefone\n
-  Mensagem`
-  window.open(`https://api.whatsapp.com/send?phone=5511998218975&text=${encodeURI(budget)}`, '_blank')
+  budget += `\n*Nome* ${selectForm.elements['form-name'].value}\n
+*Email* ${selectForm.elements['form-email'].value}\n
+*Telefone* ${selectForm.elements['form-phone'].value}\n
+*Mensagem* ${selectForm.elements['form-message'].value}`
+const whats = window.innerWidth > 768 ? 'web' : 'api'
+  window.open(`https://${whats}.whatsapp.com/send?phone=5511998218975&text=${encodeURI(budget)}`, '_blank')
+}
 })
+
+if (typeof IMask !== 'undefined') {
+const selectPhone = document.getElementById('form-phone')
+const maskOptions = {
+  mask: '(00)00000-0000'
+}
+IMask(selectPhone, maskOptions);
+}
+
 

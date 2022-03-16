@@ -330,6 +330,7 @@ body {
   font-family: inherit;
   padding: 9px;
   font-size: 16px;
+  color: #000;
 }
 
 .product-select p {
@@ -692,11 +693,6 @@ body {
   display: grid;
   gap: 15px;
   width: 100%;
-}
-
-.inputs, .send-message::placeholder {
-  color: #666;
-  opacity: 1;
 }
 
 .form-container input{
