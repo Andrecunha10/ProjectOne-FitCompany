@@ -69,6 +69,12 @@ const getSectionTag = (group) => {
     const btnAddCart = createArticle.querySelector('.btnaddcart')
     btnAddCart.addEventListener('click', () => {
       addToCart(product)
+      
+    })
+
+    const imageProduct = createArticle.querySelector('.product-name')
+    imageProduct.addEventListener('click', () => {
+      saveLocalStorage(product)
     })
   })
   return createSection
@@ -242,6 +248,13 @@ const maskOptions = {
   mask: '(00)00000-0000'
 }
 IMask(selectPhone, maskOptions);
+}
+
+
+//PAGE PRODUCT.HMTL
+
+const saveLocalStorage = product => {
+  localStorage.setItem('productSelect', JSON.stringify(product))
 }
 
 
