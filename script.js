@@ -39,8 +39,8 @@ const selectGroups = () => {
       })
     })
     .catch(() => {
-      if(mainGroups) {
-      mainGroups.innerHTML = '<p class="alert-error">Falha ao carregar a página. Por favor, tente novamente.</p>'
+      if (mainGroups) {
+        mainGroups.innerHTML = '<p class="alert-error">Falha ao carregar a página. Por favor, tente novamente.</p>'
       }
     })
 }
@@ -69,7 +69,6 @@ const getSectionTag = (group) => {
     const btnAddCart = createArticle.querySelector('.btnaddcart')
     btnAddCart.addEventListener('click', () => {
       addToCart(product)
-      
     })
 
     const imageProduct = createArticle.querySelector('.product-name')
@@ -151,6 +150,7 @@ const CartUpdate = (printProducts) => {
   const selectBtnRequest = document.querySelector('.btn-request')
   const selectAside = document.getElementById('add-products-cart')
   const selectAsideUl = selectAside.querySelector('ul')
+  const selectBtn = document.querySelector('.btn-add-more')
   if (addProductsCart.length > 0) {
     // UPDATE BADGE
     cartBadge?.classList.add('btn-cart-badge-on')
@@ -158,13 +158,14 @@ const CartUpdate = (printProducts) => {
     addProductsCart.forEach(product => {
       total = total + product.qty
     })
-    if (cartBadge){
-    cartBadge.textContent = total
+    if (cartBadge) {
+      cartBadge.textContent = total
     }
     //UPDATE CART
     if (printProducts) {
       selectAside.classList.add('add-products-cart-on')
       selectBtnRequest?.classList.add('btn-request-on')
+      selectBtn?.classList.add('btn-add-more-on')
       selectAsideUl.innerHTML = ''
       addProductsCart.forEach(product => {
         const createLi = document.createElement('li')
@@ -203,6 +204,7 @@ const CartUpdate = (printProducts) => {
     //TURN-OFF BADGE AND CART WITH PRODUCTS
     cartBadge?.classList.remove('btn-cart-badge-on')
     selectBtnRequest?.classList.remove('btn-request-on')
+    selectBtn?.classList.remove('btn-add-more-on')
     selectAside.classList.remove('add-products-cart-on')
 
   }
@@ -226,28 +228,28 @@ selectForm?.addEventListener('submit', (event) => {
 *Email* ${selectForm.elements['form-email'].value}\n
 *Telefone* ${selectForm.elements['form-phone'].value}\n
 *Mensagem* ${selectForm.elements['form-message'].value}`
-const whats = window.innerWidth > 768 ? 'web' : 'api'
-  window.open(`https://${whats}.whatsapp.com/send?phone=5511998218975&text=${encodeURI(budget)}`, '_blank')
-  } else{
-  let budget = 'Por gentileza, me enviar o seguinte orçamento:\n'
-  addProductsCart.forEach(product => {
-    budget += `\n*${product.qty}x ${product.name}* - cód. ${product.id}\n`
-  })
-  budget += `\n*Nome* ${selectForm.elements['form-name'].value}\n
+    const whats = window.innerWidth > 768 ? 'web' : 'api'
+    window.open(`https://${whats}.whatsapp.com/send?phone=5511998218975&text=${encodeURI(budget)}`, '_blank')
+  } else {
+    let budget = 'Por gentileza, me enviar o seguinte orçamento:\n'
+    addProductsCart.forEach(product => {
+      budget += `\n*${product.qty}x ${product.name}* - cód. ${product.id}\n`
+    })
+    budget += `\n*Nome* ${selectForm.elements['form-name'].value}\n
 *Email* ${selectForm.elements['form-email'].value}\n
 *Telefone* ${selectForm.elements['form-phone'].value}\n
 *Mensagem* ${selectForm.elements['form-message'].value}`
-const whats = window.innerWidth > 768 ? 'web' : 'api'
-  window.open(`https://${whats}.whatsapp.com/send?phone=5511998218975&text=${encodeURI(budget)}`, '_blank')
-}
+    const whats = window.innerWidth > 768 ? 'web' : 'api'
+    window.open(`https://${whats}.whatsapp.com/send?phone=5511998218975&text=${encodeURI(budget)}`, '_blank')
+  }
 })
 
 if (typeof IMask !== 'undefined') {
-const selectPhone = document.getElementById('form-phone')
-const maskOptions = {
-  mask: '(00)00000-0000'
-}
-IMask(selectPhone, maskOptions);
+  const selectPhone = document.getElementById('form-phone')
+  const maskOptions = {
+    mask: '(00)00000-0000'
+  }
+  IMask(selectPhone, maskOptions);
 }
 
 
@@ -256,5 +258,3 @@ IMask(selectPhone, maskOptions);
 const saveLocalStorage = product => {
   localStorage.setItem('productSelect', JSON.stringify(product))
 }
-
-

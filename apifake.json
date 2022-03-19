@@ -1,208 +1,208 @@
 {
-  "groups": [
-    {
-      "id": 1,
-      "name": "Linha Especial",
-      "products": [
-        {
-          "id": 2,
-          "name": "Cadeira Flexora - Extensora",
-          "image": "images/flexora-extensora.jpg",
-          "size": "1500*1100*1200",
-          "tubo": "4 Polegadas com parede de 2mm",
-          "weight": "238 kg",
-          "warranty": "3 anos",
-          "painting": "Consulte cores disponíveis",
-          "group": "Linha Especial",
-          "decription": "O equipamento Cadeira Extensora e Flexora é um aparelho 2x1, ou seja, em uma unica maquina o usuário poderá fazer extensão e flexão de joelhos, desenvolvendo assim músculos do quadríceps (extensão) e isquiotibiais (flexão)."
-        },
-        {
-          "id": 3,
-          "name": "Remada Articulada",
-          "image": "images/remada-articulada.jpg",
-          "size": "1500*1100*1200",
-          "tubo": "4 Polegadas com parede de 2mm",
-          "weight": "120 kg",
-          "warranty": "3 anos",
-          "painting": "Consulte cores disponíveis",
-          "group": "Linha Especial",
-          "decription": "O equipamento Cadeira Extensora e Flexora é um aparelho 2x1, ou seja, em uma unica maquina o usuário poderá fazer extensão e flexão de joelhos, desenvolvendo assim músculos do quadríceps (extensão) e isquiotibiais (flexão)."
-        },
-        {
-          "id": 4,
-          "name": "Scott Máquina",
-          "image": "images/scott-maquina.jpg",
-          "size": "1500*1100*1200",
-          "tubo": "4 Polegadas com parede de 2mm",
-          "weight": "223 kg",
-          "warranty": "3 anos",
-          "painting": "Consulte cores disponíveis",
-          "group": "Linha Especial",
-          "decription": "O equipamento Scott Máquina Delph Sport foi desenvolvido para trabalhar isoladamente o músculo do Bíceps."
-        },
-        {
-          "id": 5,
-          "name": "Flexora Vertical",
-          "image": "images/flexora-vertical.jpg",
-          "size": "1500*1100*1200",
-          "tubo": "4 Polegadas com parede de 2mm",
-          "weight": "205 kg",
-          "warranty": "3 anos",
-          "painting": "Consulte cores disponíveis",
-          "group": "Linha Especial",
-          "decription": " O equipamento Flexora Vertical  Delph Sports é um aparelho ,desenvolvido para trabalhar os músculos isquiotibiais em pé."
-        },
-        {
-          "id": 6,
-          "name": "Elevação Pélvica",
-          "image": "images/elevacao-pelvica.jpg", 
-          "size": "1500*1100*1200",
-          "tubo": "4 Polegadas com parede de 2mm",
-          "weight": "112 kg",
-          "warranty": "3 anos",
-          "painting": "Consulte cores disponíveis",
-          "group": "Linha Especial",
-          "decription": "O equipamento Elevação Pélvica Delph Sports é um aparelho desenvolvido para trabalhar a elevação de quadril fortalecendo a região glútea e o assoalho pélvico promovendo estabilidade na articulação do quadril protegendo a coluna na hora do exercício."
-        },
-        {
-          "id": 7,
-          "name": "Glúteo 4 Apoios - Máquina",
-          "image": "images/gluteo-4-apoios.jpg",
-          "size": "1500*1100*1200",
-          "tubo": "4 Polegadas com parede de 2mm",
-          "weight": "238 kg",
-          "warranty": "3 anos",
-          "painting": "Consulte cores disponíveis",
-          "group": "Linha Especial",
-          "decription": "O equipamento Glúteo 4 apoios articulado Delph Sports é um aparelho desenvolvido com a função de trabalhar a extenção do quadril, adução e rotação externa da coxa, com apoio dos braços trazendo mais conforto e estabilidade ao executar o exercício de glúteo."
-        },
-        {
-          "id": 8,
-          "name": "Remada Cavalinho",
-          "image": "images/remada-cavalinho.jpg",
-          "size": "1500*1100*1200",
-          "tubo": "4 Polegadas com parede de 2mm",
-          "weight": "115 kg",
-          "warranty": "3 anos",
-          "painting": "Consulte cores disponíveis",
-          "group": "Linha Especial",
-          "decription": "O equipamento Cadeira Extensora e Flexora é um aparelho 2x1, ou seja, em uma unica maquina o usuário poderá fazer extensão e flexão de joelhos, desenvolvendo assim músculos do quadríceps (extensão) e isquiotibiais (flexão)."
-        },
-        {
-          "id": 18,
-          "name": "Agachamento Sissy",
-          "image": "images/agachamento-sissy.jpg",
-          "size": "1500*1100*1200",
-          "tubo": "2 Polegadas com parede de 2mm",
-          "weight": "60 kg",
-          "warranty": "3 anos",
-          "painting": "Consulte cores disponíveis",
-          "group": "Linha Especial",
-          "decription": "O equipamento Agachamento Sissy Delph Sports é um aparelho desenvolvido para realizar exercícios de agachamento, esses exercícios permitem fortalecer a musculatura das coxas, glúteos, quadril e panturrilha."
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "name": "Linha Quadrada",
-      "products": [
-        {
-          "id": 10,
-          "name": "Peck Deck",
-          "image": "images/peck-deck.jpg",
-          "size": "1500*1100*1200",
-          "tubo": "4 Polegadas com parede de 2mm",
-          "weight": "257 kg",
-          "warranty": "3 anos",
-          "painting": "Consulte cores disponíveis",
-          "group": "Linha Quadrada",
-          "decription": "O equipamento Cadeira Extensora e Flexora é um aparelho 2x1, ou seja, em uma unica maquina o usuário poderá fazer extensão e flexão de joelhos, desenvolvendo assim músculos do quadríceps (extensão) e isquiotibiais (flexão)."
-        },
-        {
-          "id": 11,
-          "name": "Scott Maquina",
-          "image": "images/scott-maquina-qd.jpg",
-          "size": "1500*1100*1200",
-          "tubo": "4 Polegadas com parede de 2mm",
-          "weight": "238 kg",
-          "warranty": "3 anos",
-          "painting": "Consulte cores disponíveis",
-          "group": "Linha Quadrada",
-          "decription": "O equipamento Cadeira Extensora e Flexora é um aparelho 2x1, ou seja, em uma unica maquina o usuário poderá fazer extensão e flexão de joelhos, desenvolvendo assim músculos do quadríceps (extensão) e isquiotibiais (flexão)."
-        },
-        {
-          "id": 12,
-          "name": "Banco Reto - Inclinado",
-          "image": "images/banco-inclinado.jpg",
-          "size": "1500*1100*1200",
-          "tubo": "4 Polegadas com parede de 2mm",
-          "weight": "238 kg",
-          "warranty": "3 anos",
-          "painting": "Consulte cores disponíveis",
-          "group": "Linha Quadrada",
-          "decription": "O equipamento Cadeira Extensora e Flexora é um aparelho 2x1, ou seja, em uma unica maquina o usuário poderá fazer extensão e flexão de joelhos, desenvolvendo assim músculos do quadríceps (extensão) e isquiotibiais (flexão)."
-        },
-        {
-          "id": 13,
-          "name": "Glúteo 4 Apoios",
-          "image": "images/gluteo-4-apoios-qd.jpg",
-          "size": "1500*1100*1200",
-          "tubo": "4 Polegadas com parede de 2mm",
-          "weight": "238 kg",
-          "warranty": "3 anos",
-          "painting": "Consulte cores disponíveis",
-          "group": "Linha Quadrada",
-          "decription": "O equipamento Cadeira Extensora e Flexora é um aparelho 2x1, ou seja, em uma unica maquina o usuário poderá fazer extensão e flexão de joelhos, desenvolvendo assim músculos do quadríceps (extensão) e isquiotibiais (flexão)."
-        },
-        {
-          "id": 14,
-          "name": "Leg Press 45º",
-          "image": "images/leg-press-45.jpg",
-          "size": "1500*1100*1200",
-          "tubo": "4 Polegadas com parede de 2mm",
-          "weight": "238 kg",
-          "warranty": "3 anos",
-          "painting": "Consulte cores disponíveis",
-          "group": "Linha Quadrada",
-          "decription": "O equipamento Cadeira Extensora e Flexora é um aparelho 2x1, ou seja, em uma unica maquina o usuário poderá fazer extensão e flexão de joelhos, desenvolvendo assim músculos do quadríceps (extensão) e isquiotibiais (flexão)."
-        },
-        {
-          "id": 15,
-          "name": "Hack",
-          "image": "images/hack.jpg",
-          "size": "1500*1100*1200",
-          "tubo": "4 Polegadas com parede de 2mm",
-          "weight": "238 kg",
-          "warranty": "3 anos",
-          "painting": "Consulte cores disponíveis",
-          "group": "Linha Quadrada",
-          "decription": "O equipamento Cadeira Extensora e Flexora é um aparelho 2x1, ou seja, em uma unica maquina o usuário poderá fazer extensão e flexão de joelhos, desenvolvendo assim músculos do quadríceps (extensão) e isquiotibiais (flexão)."
-        },
-        {
-          "id": 16,
-          "name": "Panturrilha Sentada",
-          "image": "images/panturrilha-sentada.jpg",
-          "size": "1500*1100*1200",
-          "tubo": "4 Polegadas com parede de 2mm",
-          "weight": "238 kg",
-          "warranty": "3 anos",
-          "painting": "Consulte cores disponíveis",
-          "group": "Linha Quadrada",
-          "decription": "O equipamento Cadeira Extensora e Flexora é um aparelho 2x1, ou seja, em uma unica maquina o usuário poderá fazer extensão e flexão de joelhos, desenvolvendo assim músculos do quadríceps (extensão) e isquiotibiais (flexão)."
-        },
-        {
-          "id": 17,
-          "name": "Multifuncional",
-          "image": "images/multifuncional.jpg",
-          "size": "1500*1100*1200",
-          "tubo": "4 Polegadas com parede de 2mm",
-          "weight": "238 kg",
-          "warranty": "3 anos",
-          "painting": "Consulte cores disponíveis",
-          "group": "Linha Quadrada",
-          "decription": "O equipamento Cadeira Extensora e Flexora é um aparelho 2x1, ou seja, em uma unica maquina o usuário poderá fazer extensão e flexão de joelhos, desenvolvendo assim músculos do quadríceps (extensão) e isquiotibiais (flexão)."
-        }
-      ]
-    }
-  ]
-}
+    "groups": [
+      {
+        "id": 1,
+        "name": "Linha Especial",
+        "products": [
+          {
+            "id": 2,
+            "name": "Cadeira Flexora - Extensora",
+            "image": "images/flexora-extensora.jpg",
+            "size": "1500*1100*1200",
+            "pipe": "4 Polegadas com parede de 2mm",
+            "weight": "238 kg",
+            "warranty": "3 anos",
+            "painting": "Consulte cores disponíveis",
+            "group": "Linha Especial",
+            "decription": "O equipamento Cadeira Extensora e Flexora é um aparelho 2x1, ou seja, em uma unica maquina o usuário poderá fazer extensão e flexão de joelhos, desenvolvendo assim músculos do quadríceps (extensão) e isquiotibiais (flexão)."
+          },
+          {
+            "id": 3,
+            "name": "Remada Articulada",
+            "image": "images/remada-articulada.jpg",
+            "size": "1500*1100*1200",
+            "pipe": "4 Polegadas com parede de 2mm",
+            "weight": "120 kg",
+            "warranty": "3 anos",
+            "painting": "Consulte cores disponíveis",
+            "group": "Linha Especial",
+            "decription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum reprehenderit unde quam exercitationem voluptatem cum explicabo suscipit facilis aut animi natus totam iusto ratione iste, quisquam harum magnam impedit voluptates!"
+          },
+          {
+            "id": 4,
+            "name": "Scott Máquina",
+            "image": "images/scott-maquina.jpg",
+            "size": "1500*1100*1200",
+            "pipe": "4 Polegadas com parede de 2mm",
+            "weight": "223 kg",
+            "warranty": "3 anos",
+            "painting": "Consulte cores disponíveis",
+            "group": "Linha Especial",
+            "decription": "O equipamento Scott Máquina Delph Sport foi desenvolvido para trabalhar isoladamente o músculo do Bíceps."
+          },
+          {
+            "id": 5,
+            "name": "Flexora Vertical",
+            "image": "images/flexora-vertical.jpg",
+            "size": "1500*1100*1200",
+            "pipe": "4 Polegadas com parede de 2mm",
+            "weight": "205 kg",
+            "warranty": "3 anos",
+            "painting": "Consulte cores disponíveis",
+            "group": "Linha Especial",
+            "decription": " O equipamento Flexora Vertical  Delph Sports é um aparelho ,desenvolvido para trabalhar os músculos isquiotibiais em pé."
+          },
+          {
+            "id": 6,
+            "name": "Elevação Pélvica",
+            "image": "images/elevacao-pelvica.jpg", 
+            "size": "1500*1100*1200",
+            "pipe": "4 Polegadas com parede de 2mm",
+            "weight": "112 kg",
+            "warranty": "3 anos",
+            "painting": "Consulte cores disponíveis",
+            "group": "Linha Especial",
+            "decription": "O equipamento Elevação Pélvica Delph Sports é um aparelho desenvolvido para trabalhar a elevação de quadril fortalecendo a região glútea e o assoalho pélvico promovendo estabilidade na articulação do quadril protegendo a coluna na hora do exercício."
+          },
+          {
+            "id": 7,
+            "name": "Glúteo 4 Apoios - Máquina",
+            "image": "images/gluteo-4-apoios.jpg",
+            "size": "1500*1100*1200",
+            "pipe": "4 Polegadas com parede de 2mm",
+            "weight": "238 kg",
+            "warranty": "3 anos",
+            "painting": "Consulte cores disponíveis",
+            "group": "Linha Especial",
+            "decription": "O equipamento Glúteo 4 apoios articulado Delph Sports é um aparelho desenvolvido com a função de trabalhar a extenção do quadril, adução e rotação externa da coxa, com apoio dos braços trazendo mais conforto e estabilidade ao executar o exercício de glúteo."
+          },
+          {
+            "id": 8,
+            "name": "Remada Cavalinho",
+            "image": "images/remada-cavalinho.jpg",
+            "size": "1500*1100*1200",
+            "pipe": "4 Polegadas com parede de 2mm",
+            "weight": "115 kg",
+            "warranty": "3 anos",
+            "painting": "Consulte cores disponíveis",
+            "group": "Linha Especial",
+            "decription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum reprehenderit unde quam exercitationem voluptatem cum explicabo suscipit facilis aut animi natus totam iusto ratione iste, quisquam harum magnam impedit voluptates!"
+          },
+          {
+            "id": 18,
+            "name": "Agachamento Sissy",
+            "image": "images/agachamento-sissy.jpg",
+            "size": "1500*1100*1200",
+            "pipe": "2 Polegadas com parede de 2mm",
+            "weight": "60 kg",
+            "warranty": "3 anos",
+            "painting": "Consulte cores disponíveis",
+            "group": "Linha Especial",
+            "decription": "O equipamento Agachamento Sissy Delph Sports é um aparelho desenvolvido para realizar exercícios de agachamento, esses exercícios permitem fortalecer a musculatura das coxas, glúteos, quadril e panturrilha."
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Linha Quadrada",
+        "products": [
+          {
+            "id": 10,
+            "name": "Peck Deck",
+            "image": "images/peck-deck.jpg",
+            "size": "1500*1100*1200",
+            "pipe": "80*40mm e com parede de 2mm",
+            "weight": "257 kg",
+            "warranty": "3 anos",
+            "painting": "Consulte cores disponíveis",
+            "group": "Linha Quadrada",
+            "decription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum reprehenderit unde quam exercitationem voluptatem cum explicabo suscipit facilis aut animi natus totam iusto ratione iste, quisquam harum magnam impedit voluptates!"
+          },
+          {
+            "id": 11,
+            "name": "Scott Maquina",
+            "image": "images/scott-maquina-qd.jpg",
+            "size": "1500*1100*1200",
+            "pipe": "80*40mm e com parede de 2mm",
+            "weight": "238 kg",
+            "warranty": "3 anos",
+            "painting": "Consulte cores disponíveis",
+            "group": "Linha Quadrada",
+            "decription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum reprehenderit unde quam exercitationem voluptatem cum explicabo suscipit facilis aut animi natus totam iusto ratione iste, quisquam harum magnam impedit voluptates!"
+          },
+          {
+            "id": 12,
+            "name": "Banco Reto - Inclinado",
+            "image": "images/banco-inclinado.jpg",
+            "size": "1500*1100*1200",
+            "pipe": "80*40mm e com parede de 2mm",
+            "weight": "238 kg",
+            "warranty": "3 anos",
+            "painting": "Consulte cores disponíveis",
+            "group": "Linha Quadrada",
+            "decription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum reprehenderit unde quam exercitationem voluptatem cum explicabo suscipit facilis aut animi natus totam iusto ratione iste, quisquam harum magnam impedit voluptates!"
+          },
+          {
+            "id": 13,
+            "name": "Glúteo 4 Apoios",
+            "image": "images/gluteo-4-apoios-qd.jpg",
+            "size": "1500*1100*1200",
+            "pipe": "80*40mm e com parede de 2mm",
+            "weight": "238 kg",
+            "warranty": "3 anos",
+            "painting": "Consulte cores disponíveis",
+            "group": "Linha Quadrada",
+            "decription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum reprehenderit unde quam exercitationem voluptatem cum explicabo suscipit facilis aut animi natus totam iusto ratione iste, quisquam harum magnam impedit voluptates!"
+          },
+          {
+            "id": 14,
+            "name": "Leg Press 45º",
+            "image": "images/leg-press-45.jpg",
+            "size": "1500*1100*1200",
+            "pipe": "80*40mm e com parede de 2mm",
+            "weight": "238 kg",
+            "warranty": "3 anos",
+            "painting": "Consulte cores disponíveis",
+            "group": "Linha Quadrada",
+            "decription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum reprehenderit unde quam exercitationem voluptatem cum explicabo suscipit facilis aut animi natus totam iusto ratione iste, quisquam harum magnam impedit voluptates!"
+          },
+          {
+            "id": 15,
+            "name": "Hack",
+            "image": "images/hack.jpg",
+            "size": "1500*1100*1200",
+            "pipe": "80*40mm e com parede de 2mm",
+            "weight": "238 kg",
+            "warranty": "3 anos",
+            "painting": "Consulte cores disponíveis",
+            "group": "Linha Quadrada",
+            "decription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum reprehenderit unde quam exercitationem voluptatem cum explicabo suscipit facilis aut animi natus totam iusto ratione iste, quisquam harum magnam impedit voluptates!"
+          },
+          {
+            "id": 16,
+            "name": "Panturrilha Sentada",
+            "image": "images/panturrilha-sentada.jpg",
+            "size": "1500*1100*1200",
+            "pipe": "80*40mm e com parede de 2mm",
+            "weight": "238 kg",
+            "warranty": "3 anos",
+            "painting": "Consulte cores disponíveis",
+            "group": "Linha Quadrada",
+            "decription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum reprehenderit unde quam exercitationem voluptatem cum explicabo suscipit facilis aut animi natus totam iusto ratione iste, quisquam harum magnam impedit voluptates!"
+          },
+          {
+            "id": 17,
+            "name": "Multifuncional",
+            "image": "images/multifuncional.jpg",
+            "size": "1500*1100*1200",
+            "pipe": "80*40mm e com parede de 2mm",
+            "weight": "238 kg",
+            "warranty": "3 anos",
+            "painting": "Consulte cores disponíveis",
+            "group": "Linha Quadrada",
+            "decription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum reprehenderit unde quam exercitationem voluptatem cum explicabo suscipit facilis aut animi natus totam iusto ratione iste, quisquam harum magnam impedit voluptates!"
+          }
+        ]
+      }
+    ]
+  }
