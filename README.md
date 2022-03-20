@@ -62,7 +62,7 @@ O site está hospedado na plataforma [netlify](https://www.netlify.com/)
 
 **PÁGINA SOLICITAR ORÇAMENTO - CARRINHO COM PRODUTOS**
 
-<img src="images/telas_do_projeto/solicitar_orcamento_com_produtos.jpg" />
+<img src="images/telas_do_projeto/solicitar_orcamento_com_produto.jpg" />
 
 ---
 Desenvovido por [André Luiz da Cunha](https://github.com/Andrecunha10/) 😊
