@@ -6,6 +6,7 @@ const openProductPage = () => {
     pageProduct = JSON.parse(pageProductSave)
     }
     const selectDivProduct = document.getElementById('page-product')
+    const selectTitle = document.querySelector('.pagetitle')
 if(!pageProduct || !pageProductSave){
   selectDivProduct.innerHTML = `
     <div class="alert-error">
@@ -13,6 +14,7 @@ if(!pageProduct || !pageProductSave){
     </div>
   `
 } else{
+        selectTitle.innerHTML=`${pageProduct.name}`
         selectDivProduct.innerHTML=`
         <h1>${pageProduct.group}</h1>
         <div class="imageanddescripition">

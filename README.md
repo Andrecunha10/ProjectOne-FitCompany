@@ -16,8 +16,7 @@ A solução que você vai desenvolver deve seguir os seguintes requisitos:
 
 ## 🛠️ Construído com
 
-Este projeto foi desenvolvido de forma pura com **HTML**, **CSS** e **JAVASCRIPT** puros.
-
+Este projeto foi desenvolvido com **HTML**, **CSS** e **JAVASCRIPT** puros.
 
 ## 🖇️ Inspiração:
 
@@ -29,11 +28,12 @@ Este projeto foi desenvolvido de forma pura com **HTML**, **CSS** e **JAVASCRIPT
 
 [https://fit-company.netlify.app/](https://fit-company.netlify.app/).
 
-O site está postado na plataforma [netlify](https://www.netlify.com/)
+O site está hospedado na plataforma [netlify](https://www.netlify.com/)
 
 ## 📸 FOTOS DO PROJETO
 
+**INDEX MOBILE**
 
-
+<img src="images/telas_do_projeto/index_mobile.jpg" />
 ---
 Desenvovido com ❤️ por [André Luiz da Cunha](https://github.com/Andrecunha10/) 😊
