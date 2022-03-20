@@ -35,5 +35,34 @@ O site está hospedado na plataforma [netlify](https://www.netlify.com/)
 **INDEX MOBILE**
 
 <img src="images/telas_do_projeto/index_mobile.jpg" />
+
+**INDEX DESKTOP**
+
+<img src="images/telas_do_projeto/index_desktop.jpg" />
+
+**CARRINHO VAZIO**
+
+<img src="images/telas_do_projeto/carrinho_vazio.jpg" />
+
+**CARRINHO COM PRODUTOS**
+
+<img src="images/telas_do_projeto/carrinho_com_produtos.jpg" />
+
+**PÁGINA DE DESCRUÇÃO DO PRODUTO - MOBILE**
+
+<img src="images/telas_do_projeto/pagina_do_produto_mobile.jpg" />
+
+**PÁGINA DE DESCRUÇÃO DO PRODUTO - DESKTOP**
+
+<img src="images/telas_do_projeto/pagina_do_produto_desktop.jpg" />
+
+**PÁGINA SOLICITAR ORÇAMENTO - CARRINHO VAZIO**
+
+<img src="images/telas_do_projeto/solicitar_orcamento_carrinho_vazio.jpg" />
+
+**PÁGINA SOLICITAR ORÇAMENTO - CARRINHO COM PRODUTOS**
+
+<img src="images/telas_do_projeto/solicitar_orcamento_com_produtos.jpg" />
+
 ---
-Desenvovido com ❤️ por [André Luiz da Cunha](https://github.com/Andrecunha10/) 😊
+Desenvovido por [André Luiz da Cunha](https://github.com/Andrecunha10/) 😊
